@@ -1,0 +1,76 @@
+<!-- In this WEB page we used only CSS/HTML -->
+<!-- We have included a bootstrap footer for all  our web pages because we have to maintain a common footer  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Membership</title>
+	<link rel="stylesheet" href="Membershipform.css">
+	<script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+</head>
+<body>
+	<section class="sub-header2">
+		<nav>		
+							
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul style="padding-top: 50px;">
+					<li><a href="HomePage.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="facilities.html">FACILITIES</a></li>
+					<li><a href="membership.html">MEMBERSHIP</a></li>
+					<li><a href="offers.html">OFFERS</a></li>
+					<li><a href="blog.html">BLOG</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+				
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+	</nav>
+
+		<h1><span style="font-size: 45px">G</span>ET OUR TRIAL MEMBERSHIP</h1>
+		<p></p>
+		
+		
+	</section>
+
+	
+	<div class="hero">
+		<form >
+			<div class="row">
+				<div class="input-group">
+				<input type="text"  name="username" required>
+				<label for="name"><i class="fas fa-user"></i> Your Name</label>				
+			</div>
+			<div class="input-group">
+				<input type="text" name="phone" id="number" required>
+				<label for="number"><i class="fas fa-phone-square-alt"></i> TP NO:</label>				
+			</div>
+			</div>
+			<div class="input-group form-control error">
+				<input type="email" id="email" name="email" required>
+				<label for="email"><i class="fas fa-envelope"></i> Your Email</label>				
+			</div>
+			<div class="input-group">
+				<textarea id="message" name="message" rows="8" required></textarea>
+				<label for="message"><i class="far fa-comments"></i> Your Message</label>				
+			</div>
+
+			<button type="submit" name="submit" value="submit" ><i class="fab fa-telegram-plane"></i> SUBMIT</button>
+
+
+		</form>
+	</div>
+
+
+	
+</body>
+</html>

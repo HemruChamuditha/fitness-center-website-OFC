@@ -1,0 +1,21 @@
+					WEB PROJECT GROUP - 24
+				    (Our topic - Fitness Center)
+
+
+****WE HAVE CREATED 9 WEB PAGES****
+
+Main page is ==> HomePage.html
+
+Responsive Web pages ==> HomePage.html
+			 blog.html
+			 contact.html
+          		 facilities.html
+			 offers.html
+			 Registration_FormWith_JS_validation.html
+
+Bootstrap Framework Web pages ==>   offers.html
+				    login.html
+				    Registration_FormWith_JS_validation.html
+				  
+
+Web form with Java Script validations ==>  Registration_FormWith_JS_validation.html

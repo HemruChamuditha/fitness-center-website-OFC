@@ -1,0 +1,339 @@
+
+<!-- This Web page includes JavaScript validations with a Registration Form -->
+<!-- This web page is developed by using Bootstrap Framework -->
+<!-- This is a Responsive  web page -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/js/bootstrap.css">
+    <title>RegistrationForm</title>
+    
+
+
+    <style>
+        
+
+        body {
+            background-image: linear-gradient(rgba(43, 44, 43, 0.5),rgba(15, 15, 15, 0.719)),url(images/facilitytwo\ \(2\).jpg);
+            background-size: cover;
+            
+            background-attachment: fixed;
+            font-family: new time roman;
+            margin: 0px;
+            padding: 0px;
+        }
+        h1{
+            font-size: 40px;
+            color: white;
+            margin-top: 20px;
+        }
+
+        p{
+            font-size: 17px;
+            color: white;
+        }
+
+        h3{
+            font-size: 25px;
+            color: white;
+        }
+
+        .glyphicon-pencil{
+            font-size: 30px;
+            color: white;
+            float: right;
+            margin-top: 20px;
+        }
+
+        .col-md-5{
+            margin-top: 27px;
+            box-shadow: -1px 1px 60px 10px black;
+            background: rgba(143, 143, 142, 0);
+        }
+
+        .label{
+            font-weight: normal;
+            margin-top: 19px;
+            color: white;
+            font-size: 18px;
+        }
+
+        .form-control{
+            background:rgba(109, 109, 107, 0.75);;
+            border-radius: 5px;
+            border:0px;
+            border-bottom: 1px solid rgb(250, 250, 246);
+            font-size: 18px;
+            margin-top: 15px;
+            height: 40px;
+            color: white;
+        }
+        .input[type="checkbox"]{
+            margin-top: 15px;
+            width: 15px;
+            height: 15px;
+            
+        }
+
+        small{
+            font-size: 18px;
+            color: white;
+        }
+
+        input[type="radio"]{
+            margin-top: 26px;
+        }
+
+        option{
+            color:rgb(255, 255, 255);
+        }
+
+        .btn-info{
+            margin-top: 25px;
+            font-size: 18px;
+            width: 120px;
+            margin-left: 100px;
+           
+            margin-bottom: 20px;
+        }
+        .btn-warning{
+            margin-top: 25px;
+            font-size: 18px;
+            width: 120px;
+            margin-left: 5px;
+            margin-bottom: 20px;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+
+<div class="container">
+    <div class="row">
+        <div style="padding-top: 180px; padding-right: 50px" class="col-md-7">
+            <h1 style="color: rgb(173, 173, 98)" class="text-left">REG!STER NOW</h1>
+            <p class="text-left"> <span style="font-size: 30px;">S</span>ri Lanka's very first medically focused gym. Our wellness section contains a full-fledged medical clinic with doctors, nutritionists,
+                sports medicine specialists, and other specialists on staff to guarantee that our members receive the finest care possible. <br> <br> It was designed by an award winning architect and is Sri Lanka's largest and most technologically sophisticated fitness center. As a result, this structure is not only the largest, but also the pinnacle of premium fitness and wellness centers in Sri Lanka!
+                We provide a wide range of premium services to our members.</p>
+        </div>
+        <div class="col-md-5">
+            <!-- 2 colum of 6 -->
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="text-left">Registration form</h3>
+                </div>
+                <div class="col-md-6">
+                    <span class="glyphicon glyphicon-pencil"></span>
+                </div>
+            </div>
+            <!-- close -->
+            <!--another colum for textbox and label -->
+            <!-- form -->
+                <form name="my" method="post" onSubmit="return validate()">
+                    <div class="row">
+                        <label class="label col-md-2 control-label">First Name</label>
+                        <div class="col-md-10">
+                            <input style="margin-left: 10px ;" type="text" class="form-control" placeholder="Enter your first name" name="fname">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label class="label col-md-2 control-label">Last Name</label>
+                        <div class="col-md-10">
+                            <input style="margin-left: 10px ;" type="text" class="form-control" placeholder="Enter your last name" name="lname">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label class="label col-md-2 control-label">Birthday</label>
+                        <div class="col-md-10">
+                            <input style="margin-left: 10px ;" type="date" id="date" min="1981-01-01" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label class="label col-md-2 control-label">E-mail</label>
+                        <div class="col-md-10">
+                            <input style="margin-left: 10px ;" type="email" class="form-control" placeholder="E-mail" name="email">
+                        </div>
+                    </div>
+                   
+                    <div class="row">
+                        <label class="label col-md-2 control-label">T.P No</label>
+                        <div class="col-md-10">
+                            <input style="margin-left: 10px ;" type="text" class="form-control" placeholder="Your contact No" name="phone">
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <label for="" class="label col-md-2 control-label">Gender</label>
+                        <div class="col-md-10">
+                            <input style="margin-left: 10px ; ;" type="radio" name="gender" value="male"> <small>Male</small> 
+                            <input style="margin-left: 10px ;" type="radio" name="gender" value="female"> <small>Female</small>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label class="label col-md-2 control-label">Address</label>
+                        <div  class="col-md-10">
+                           <textarea style="margin-left: 10px ;" name="address" class="form-control"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label for="" class="label col-md-2 control-label">State</label>
+                        <div class="col-md-10">
+                           <select style="margin-left: 10px ;" class="form-control" name="state" id="state">
+                               <option value="">Badulla</option>
+                               <option value="">Colombo</option>
+                               <option value="">Gampaha</option>
+                               <option value="">Kalutara</option>
+                               <option value="">Kandy</option>
+    
+                               <option value="">Matale</option>
+                               <option value="">Matara</option>
+                               
+                           </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label class="label col-md-2 control-label">Password</label>
+                        <div class="col-md-10">
+                            <input style="margin-left: 10px ;" type="Password" id="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" class="form-control" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"  name="psw">
+                            <input style="margin-left: 10px ;" type="checkbox" name="check"> <small> Remember me</small>
+                        </div>
+                    </div>
+    
+                   
+    
+                  
+                    
+    
+                    <a href=""> <input type="submit" name="submit" value="submit" class="btn btn-info"></a>
+                    <a href="login.html"> <div class="btn btn-warning">Back to Login</div></a>
+                </form>
+                <!-- form -->
+            <!-- close -->
+        </div>
+    </div>
+</div>
+
+
+<!-- Form validation -->
+
+<script type="text/javascript">
+
+
+
+    function validate(){
+        var first = document.forms["my"]["fname"].value;
+        var last  = document.forms["my"]["lname"].value;
+        var date = document.forms["my"]["date"].value;
+        var email = document.forms["my"]["email"].value;
+        var phone = document.forms["my"]["phone"].value;
+        var gender = document.forms["my"]["gender"].value;
+        var address = document.forms["my"]["address"].value;
+        var check = document.forms["my"]["check"].value;
+    
+// first name validation begins here
+        if(first == ""){
+            alert("Enter the First name");
+            return false;
+        }
+
+        if(!isNaN(first)){
+            alert("Name should be in character !!")
+            return false;
+        }    
+// first name validation ends here
+
+// Second name validation begins here
+        if(last == ""){
+            alert("Enter the Second name");
+            return false;
+        }
+
+        if(!isNaN(last)){
+            alert("Name should be in character !!")
+            return false;
+        }
+// Second name validation ends here    
+
+
+// date of birth validate starts here
+
+        if(date == ""){
+            alert("Enter the Date of Birth");
+            return false;
+        }
+
+// date of birth validate ends here
+
+
+// Email validate starts here
+        var at = email.indexOf("@");        
+        var dot = email.lastIndexOf(".");
+
+        if(at<1 || dot<at+2 || dot+2 >= email.length){
+            alert("Not a valid Email");
+            return false;
+        }
+// Email validate ends here
+
+
+//Phone number validation starts here
+
+        if(phone == ""){
+            alert("enter phone Number");
+            return false;
+        }
+        if(isNaN(phone)){
+            alert("Phone no should be in digits");
+            return false;
+        }
+        if(phone.length!=10){
+            alert("Must be 10 digit No !");
+        }
+//Phone number validation ends here
+
+
+// gender radio validate
+        if(gender == ""){
+            alert("Select a gender");
+            return false
+        }
+// gender radio validate
+
+
+// address validate starts here
+        if(address == "" ){
+            alert("Enter an address");
+            return false;
+        }
+
+// address validate ends here
+
+
+
+// password checkbox validates here
+
+        if(check == ""){
+            alert("tick the checkbox");
+            return false
+        }
+
+}
+// <!-- Form validation -->
+
+</script>
+
+
+
+    
+</body>
+</html>
